@@ -1,17 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Button } from '../components/Button'
-import agents from '../images/agents.jpg'
+import { Button } from '../../components/Button'
+import ilinois from '../../images/ilinois.jpg'
 
 const Section = styled.section`
   width: 100%;
   height: 100%;
   padding: 4rem 0rem;
+  background: #bec5d9;
 `
 const Container = styled.div`
   background: #fff;
   padding: 3rem 2rem;
   position: relative;
+  background: #bec5d9;
 `
 
 const Wrap = styled.div`
@@ -37,6 +39,7 @@ const Content = styled.div`
   }
 
   h1 {
+    text-align: center;
     margin-bottom: 2rem;
     font-size: 2rem;
   }
@@ -44,6 +47,7 @@ const Content = styled.div`
   p {
     margin-bottom: 1rem;
     line-height: 1.5;
+    text-align: justify;
   }
 `
 
@@ -58,30 +62,23 @@ const ColumnImage = styled.div`
   width: 100%;
   margin: 0 auto;
   left: 0;
-
-  @media screen and (max-width: 768px) {
-    height: 320px;
-    top: -65px;
-    width: 80%;
-    margin: 0 auto;
-    left: 0;
-  }
 `
 
 const Image = styled.img`
-  height: 100%;
-  width: 100%;
+  height: 80%;
+  width: 80%;
   object-fit: cover;
+  border: hidden;
+  border-radius: 6px;
 `
-
-const About = () => {
+const Shaumburg = () => {
   return (
     <Section>
       <Container>
         <Wrap>
           <ColumnImage>
             <Image
-              src={agents}
+              src={ilinois}
               data-aos='fade-left'
               data-aos-duration='2200'
               data-aos-once='true'
@@ -96,21 +93,22 @@ const About = () => {
               data-aos-once='true'
               data-aos-anchor-placement='center bottom'
             >
-              <h1>THE CENTURY 22 DIFFERENCE</h1>
+              <h1>Stunning house in Shaumburg, Ilinois</h1>
               <p>
-                Dedication to delivering exceptional service is at the core of
-                our commitment to our clients. We love what we do, every essence
-                of it, from the possibility of an unimaginable outcome to the
-                fine details of deal-structuring. We live and breathe real
-                estate.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Blanditiis, inventore? Quisquam quis autem, ex dolorum animi
+                eveniet! Ratione harum sint iste corrupti numquam aliquid, ipsa
+                sit doloribus quo nemo beatae possimus consequuntur laudantium
+                incidunt recusandae illo obcaecati dicta quas amet autem
+                assumenda! Corrupti ad quae numquam aliquam quaerat illum harum
+                tempora quas eaque consequatur ullam quod iste at, sapiente
+                pariatur eligendi accusamus, nisi recusandae enim voluptatum a
+                accusantium unde? Iste voluptate natus accusamus inventore, odio
+                unde voluptatibus placeat dolor. Asperiores fugit rerum expedita
+                aperiam totam quis sint dolorum inventore, atque voluptatum
+                ullam natus? Aut, mollitia sit nisi sint officiis minima.
               </p>
-              <p>
-                “We believe that clients deserve more – more competency, more
-                care, more focus. Simply put, Century 22 offers a higher level
-                of service and a greater depth of competency than any other real
-                estate organization.
-              </p>
-              <Button to='/'>Go Back</Button>
+              <Button to='/homes'>Go Back</Button>
             </Content>
           </ColumnText>
         </Wrap>
@@ -119,4 +117,4 @@ const About = () => {
   )
 }
 
-export default About
+export default Shaumburg

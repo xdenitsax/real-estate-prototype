@@ -1,17 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Button } from '../components/Button'
-import agents from '../images/agents.jpg'
+import { Button } from '../../components/Button'
+import keywest from '../../images/keywest.jpg'
 
 const Section = styled.section`
   width: 100%;
   height: 100%;
   padding: 4rem 0rem;
+  background: #bec5d9;
 `
 const Container = styled.div`
   background: #fff;
   padding: 3rem 2rem;
   position: relative;
+  background: #bec5d9;
 `
 
 const Wrap = styled.div`
@@ -37,6 +39,7 @@ const Content = styled.div`
   }
 
   h1 {
+    text-align: center;
     margin-bottom: 2rem;
     font-size: 2rem;
   }
@@ -44,6 +47,7 @@ const Content = styled.div`
   p {
     margin-bottom: 1rem;
     line-height: 1.5;
+    text-align: justify;
   }
 `
 
@@ -58,30 +62,23 @@ const ColumnImage = styled.div`
   width: 100%;
   margin: 0 auto;
   left: 0;
-
-  @media screen and (max-width: 768px) {
-    height: 320px;
-    top: -65px;
-    width: 80%;
-    margin: 0 auto;
-    left: 0;
-  }
 `
 
 const Image = styled.img`
-  height: 100%;
-  width: 100%;
+  height: 80%;
+  width: 80%;
   object-fit: cover;
+  border: hidden;
+  border-radius: 6px;
 `
-
-const About = () => {
+const KeyWest = () => {
   return (
     <Section>
       <Container>
         <Wrap>
           <ColumnImage>
             <Image
-              src={agents}
+              src={keywest}
               data-aos='fade-left'
               data-aos-duration='2200'
               data-aos-once='true'
@@ -96,21 +93,23 @@ const About = () => {
               data-aos-once='true'
               data-aos-anchor-placement='center bottom'
             >
-              <h1>THE CENTURY 22 DIFFERENCE</h1>
+              <h1>Fantastic Bahama Village location in Key West, Florida</h1>
               <p>
-                Dedication to delivering exceptional service is at the core of
-                our commitment to our clients. We love what we do, every essence
-                of it, from the possibility of an unimaginable outcome to the
-                fine details of deal-structuring. We live and breathe real
-                estate.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum,
+                delectus non! Similique alias expedita hic earum suscipit,
+                itaque illo pariatur ratione quam, ullam exercitationem? Illo
+                perspiciatis culpa eligendi delectus quibusdam eius ipsum soluta
+                possimus voluptatum corporis esse sapiente repellendus quaerat
+                sit incidunt, corrupti accusamus architecto voluptate autem
+                earum quis veritatis, explicabo aliquid doloribus! Molestiae,
+                eaque odio, amet quas voluptas, asperiores excepturi natus
+                exercitationem distinctio officiis minus non unde totam?
+                Delectus at unde voluptatibus perferendis eligendi minus optio
+                consectetur ut aut! Est aliquam, id rerum, dolorem itaque unde
+                inventore illum quaerat dolor adipisci soluta, veniam quia.
+                Perferendis optio facilis possimus earum?
               </p>
-              <p>
-                “We believe that clients deserve more – more competency, more
-                care, more focus. Simply put, Century 22 offers a higher level
-                of service and a greater depth of competency than any other real
-                estate organization.
-              </p>
-              <Button to='/'>Go Back</Button>
+              <Button to='/homes'>Go Back</Button>
             </Content>
           </ColumnText>
         </Wrap>
@@ -119,4 +118,4 @@ const About = () => {
   )
 }
 
-export default About
+export default KeyWest

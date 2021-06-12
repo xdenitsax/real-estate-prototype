@@ -65,7 +65,7 @@ const InfoLink = styled(Link)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: #000d1a;
+  color: #384260;
   width: 140px;
   transition: 0.3s;
 
@@ -101,7 +101,7 @@ const Listings = () => {
           >
             <Image src={HomeOne} alt='home' />
             <h2>8 Bed 10 Bath House in Venice, California</h2>
-            <InfoLink to='/homes'>
+            <InfoLink to='/newesthomes'>
               <p>View Details</p>
               <Arrow />
             </InfoLink>
@@ -123,7 +123,7 @@ const Listings = () => {
               `}
             />
             <h2>4 Bed 2 Bath House in Miami, Florida</h2>
-            <InfoLink to='/homes'>
+            <InfoLink to='/newesthomes'>
               <p>View Details</p>
               <Arrow />
             </InfoLink>

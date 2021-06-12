@@ -10,7 +10,7 @@ const DropdownContainer = styled.div`
   z-index: 999;
   width: 100%;
   height: 100%;
-  background: #cd853f;
+  background: #fcb332;
   display: grid;
   align-items: center;
   top: 0;
@@ -31,7 +31,7 @@ const Icon = styled.div`
 `
 
 const CloseIcon = styled(FaTimes)`
-  color: #000d1a;
+  color: #384260;
 `
 
 const DropdownWrapper = styled.div``
@@ -61,7 +61,7 @@ const DropdownLink = styled(Link)`
   transition: 0.2s ease-in-out;
 
   &:hover {
-    color: #000d1a;
+    color: #384260;
   }
 `
 
@@ -69,7 +69,6 @@ const BtnWrap = styled.div`
   display: flex;
   justify-content: center;
 `
-
 const Dropdown = ({ isOpen, toggle }) => {
   return (
     <DropdownContainer isOpen={isOpen} onClick={toggle}>

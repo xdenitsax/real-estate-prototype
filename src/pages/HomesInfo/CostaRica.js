@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Button } from './Button'
-import ImageOne from '../images/kitchen-1.jpg'
+import { Button } from '../../components/Button'
+import ImageOne from '../../images/slide-3.jpg'
 
 const Section = styled.section`
-  background: #384260;
+  background: #cccccc;
   padding: 12rem 0rem;
   display: flex;
   flex-direction: column;
@@ -36,7 +36,7 @@ const Content = styled.div`
   @media screen and (max-width: 768px) {
     flex: 0 0 100%;
     max-width: 100%;
-    margin-top: 250px;
+    margin-top: 80px;
   }
 
   h1 {
@@ -58,23 +58,33 @@ const ColumnRight = styled.div`
   height: 140%;
   width: 45%;
   padding-left: 1rem;
+  margin-right: 20px;
+
+  @media screen and (max-width: 960px) {
+    margin-botom: 30px;
+  }
 
   @media screen and (max-width: 768px) {
     height: 320px;
-    top: -65px;
-    width: 80%;
+    top: -105px;
+    width: 50%;
     margin: 0 auto;
     left: 0;
   }
 `
 
 const Image = styled.img`
-  height: 100%;
+  height: 70%;
   width: 100%;
   object-fit: cover;
+
+  @media screen and (max-width: 960px) {
+    border: solid 5px #cccccc;
+    border-radius: 50%;
+  }
 `
 
-const Features = () => {
+const CostaRica = () => {
   return (
     <Section>
       <Container>
@@ -87,7 +97,11 @@ const Features = () => {
               data-aos-once='true'
               data-aos-anchor-placement='center bottom'
             >
-              <h1>Stunning Interior</h1>
+              <h1>
+                House for rent
+                <br />
+                Alajuela, Costa Rica
+              </h1>
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Deserunt maxime commodi rem dignissimos, laborum eum beatae
@@ -97,22 +111,22 @@ const Features = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
                 voluptatem.
               </p>
-              <Button to='/homes'>Learn More</Button>
+              <Button to='/contact'>Contact Us</Button>
             </Content>
           </ColumnLeft>
-          <ColumnRight>
-            <Image
-              src={ImageOne}
-              data-aos='fade-left'
-              data-aos-duration='1200'
-              data-aos-once='true'
-              data-aos-anchor-placement='center bottom'
-            />
-          </ColumnRight>
         </Wrap>
+        <ColumnRight>
+          <Image
+            src={ImageOne}
+            data-aos='fade-left'
+            data-aos-duration='1200'
+            data-aos-once='true'
+            data-aos-anchor-placement='center bottom'
+          />
+        </ColumnRight>
       </Container>
     </Section>
   )
 }
 
-export default Features
+export default CostaRica

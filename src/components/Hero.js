@@ -107,7 +107,7 @@ const arrowButtons = css`
   height: 50px;
   color: #fff;
   cursor: pointer;
-  background: #000d1a;
+  background: #384260;
   border-radius: 50px;
   padding: 10px;
   margin-right: 1rem;
@@ -115,7 +115,7 @@ const arrowButtons = css`
   transition: 0.3s;
 
   &:hover {
-    background: #cd853f;
+    background: #fcb332;
     transform: scale(1.05);
   }
 `

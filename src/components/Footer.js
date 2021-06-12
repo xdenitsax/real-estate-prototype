@@ -11,7 +11,7 @@ import {
 } from 'react-icons/fa'
 
 const Section = styled.section`
-  background: #000d1a;
+  background: #384260;
   color: #fff;
   width: 100%;
   min-height: 600px;
@@ -81,7 +81,7 @@ const SocialIcons = styled.div`
 const Icons = css`
   font-size: clamp(1rem, 6vw, 2rem);
   margin-right: 1.5rem;
-  color: #cd853f;
+  color: #fcb332;
 `
 
 const Instagram = styled(FaInstagram)`
@@ -123,43 +123,64 @@ const Footer = () => {
             </h3>
           </Quote>
           <FooterInfo>
-            <h4>Contact Us</h4>
-            <Link to='/homes'>FAQ</Link>
-            <Link to='/homes'>Support</Link>
-            <Link to='/homes'>Questions</Link>
+            <Link to='/Contact'>
+              {' '}
+              <h4>Contact Us</h4>
+            </Link>
+            <Link to='/Contact'>FAQ</Link>
+            <Link to='/Contact'>Support</Link>
+            <Link to='/Contact'>Questions</Link>
           </FooterInfo>
           <FooterInfo>
             <h4>Offices</h4>
-            <Link to='/homes'>United States</Link>
-            <Link to='/homes'>Europe</Link>
-            <Link to='/homes'>Canada</Link>
+            <a
+              href='https://goo.gl/maps/15cXr5fdSgCXVr986'
+              rel='noopener noreferrer'
+              target='_blank'
+            >
+              United States
+            </a>
+            <a
+              href='https://goo.gl/maps/7cUGeFc1otJSwgY46'
+              rel='noopener noreferrer'
+              target='_blank'
+            >
+              Europe
+            </a>
+            <a
+              href='https://goo.gl/maps/CppE6aZpSxmBi53W9'
+              rel='noopener noreferrer'
+              target='_blank'
+            >
+              Montreal
+            </a>
           </FooterInfo>
         </FooterTop>
         <FooterBottom>
           <SocialIcons>
             <a
-              href='//www.google.com'
+              href='//www.youtube.com'
               rel='noopener noreferrer'
               target='_blank'
             >
               <Youtube />
             </a>
             <a
-              href='//www.google.com'
+              href='//www.instagram.com'
               rel='noopener noreferrer'
               target='_blank'
             >
               <Instagram />
             </a>
             <a
-              href='//www.google.com'
+              href='//www.facebook.com'
               rel='noopener noreferrer'
               target='_blank'
             >
               <Facebook />
             </a>
             <a
-              href='//www.google.com'
+              href='//www.linkedin.com'
               rel='noopener noreferrer'
               target='_blank'
             >
@@ -167,7 +188,7 @@ const Footer = () => {
             </a>
           </SocialIcons>
           <Contact>
-            <Button to='/homes'>
+            <Button to='/Contact'>
               Let's Chat <IoMdArrowRoundForward />
             </Button>
           </Contact>

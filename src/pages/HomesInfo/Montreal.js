@@ -1,17 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Button } from '../components/Button'
-import agents from '../images/agents.jpg'
+import { Button } from '../../components/Button'
+import canada from '../../images/canada.jpg'
 
 const Section = styled.section`
   width: 100%;
   height: 100%;
   padding: 4rem 0rem;
+  background: #bec5d9;
 `
 const Container = styled.div`
   background: #fff;
   padding: 3rem 2rem;
   position: relative;
+  background: #bec5d9;
 `
 
 const Wrap = styled.div`
@@ -37,6 +39,7 @@ const Content = styled.div`
   }
 
   h1 {
+    text-align: center;
     margin-bottom: 2rem;
     font-size: 2rem;
   }
@@ -44,6 +47,7 @@ const Content = styled.div`
   p {
     margin-bottom: 1rem;
     line-height: 1.5;
+    text-align: justify;
   }
 `
 
@@ -58,30 +62,23 @@ const ColumnImage = styled.div`
   width: 100%;
   margin: 0 auto;
   left: 0;
-
-  @media screen and (max-width: 768px) {
-    height: 320px;
-    top: -65px;
-    width: 80%;
-    margin: 0 auto;
-    left: 0;
-  }
 `
 
 const Image = styled.img`
-  height: 100%;
-  width: 100%;
+  height: 80%;
+  width: 80%;
   object-fit: cover;
+  border: hidden;
+  border-radius: 6px;
 `
-
-const About = () => {
+const Montreal = () => {
   return (
     <Section>
       <Container>
         <Wrap>
           <ColumnImage>
             <Image
-              src={agents}
+              src={canada}
               data-aos='fade-left'
               data-aos-duration='2200'
               data-aos-once='true'
@@ -96,21 +93,23 @@ const About = () => {
               data-aos-once='true'
               data-aos-anchor-placement='center bottom'
             >
-              <h1>THE CENTURY 22 DIFFERENCE</h1>
+              <h1>Perfect 2 bedroom house in Montréal, Canada</h1>
               <p>
-                Dedication to delivering exceptional service is at the core of
-                our commitment to our clients. We love what we do, every essence
-                of it, from the possibility of an unimaginable outcome to the
-                fine details of deal-structuring. We live and breathe real
-                estate.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
+                praesentium aliquid mollitia voluptatum porro quas accusamus
+                consequatur, quo doloremque, debitis dolore officia minus sunt
+                suscipit facilis est nam odit dolor fugiat excepturi! Suscipit
+                voluptatem, autem molestias est corrupti consectetur. Asperiores
+                rerum voluptatum unde labore nam quas provident aperiam, vero
+                velit quaerat voluptate soluta. Sit repudiandae, alias ratione
+                nisi maxime eius excepturi impedit consequuntur, deserunt
+                dolorum quasi dolore adipisci natus nulla consectetur delectus.
+                Eligendi esse eius facere alias reprehenderit ex temporibus
+                magnam nostrum libero neque corrupti quibusdam itaque inventore
+                mollitia molestiae quaerat labore culpa vel non, molestias ut
+                nobis placeat.
               </p>
-              <p>
-                “We believe that clients deserve more – more competency, more
-                care, more focus. Simply put, Century 22 offers a higher level
-                of service and a greater depth of competency than any other real
-                estate organization.
-              </p>
-              <Button to='/'>Go Back</Button>
+              <Button to='/homes'>Go Back</Button>
             </Content>
           </ColumnText>
         </Wrap>
@@ -119,4 +118,4 @@ const About = () => {
   )
 }
 
-export default About
+export default Montreal
